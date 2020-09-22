@@ -1,0 +1,14 @@
+= form_with(model: query, local: true) do |form|
+  - if query.errors.any?
+    #error_explanation
+      %h2
+        = pluralize(query.errors.count, "error")
+        prohibited this query from being saved:
+      %ul
+        - query.errors.full_messages.each do |message|
+          %li= message
+  .field
+    = form.label :desc
+    = form.text_field :desc
+  .actions
+    = form.submit

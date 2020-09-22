@@ -1,0 +1,42 @@
+@import 'bootstrap';
+
+html,body { height: 100%; margin: 0px; padding: 0px; }
+
+.row {
+  height: 100%;
+}
+
+.container-fluid {
+  height: 100%;
+}
+
+.res {
+  position: relative;
+  text-align: center;
+  padding: 15px;
+  height: 100%;
+  background-color: lightyellow;
+  }
+
+.form {
+  vertical-align:middle;
+}
+
+.qry {
+  text-align: center;
+  padding: 15px;
+  height: 100%;
+  background-color: lightblue;
+  }
+
+#query_desc {
+    margin-bottom: 15px;
+}
+
+
+#spec {
+  width: 100%;
+  height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  }

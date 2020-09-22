@@ -1,0 +1,3 @@
+$("#count_placer").html("#{ j( render 'queries/res', locals: { cnt: @cnt} ) }");
+$("#spec").append("#{ j( render 'queries/res_det', locals: { query: @query} ) }");
+$("#query_desc").val("");

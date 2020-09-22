@@ -1,0 +1,14 @@
+.row
+  .col.col-6.qry
+    .form
+      = form_for @query, remote: true do |f|
+        .form-group
+          = f.text_field :desc, class: 'form-control'
+        .form-group
+          = f.submit 'Запрос', class: 'btn btn-sm btn-primary'
+
+  .col.col-6.res
+    #count_placer
+      = render 'queries/res', locals: { cnt: @cnt}
+
+    #spec
